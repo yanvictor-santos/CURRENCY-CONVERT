@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 
     <title>Coin House</title>
 </head>
@@ -31,36 +34,41 @@
         <h4 id="subtitle">Real-time widget for currency Exchange</h4>
 
         <label class="label-container">
-            <p>Date for 2024-03-01</p>
-            <div>
-                <p>I have</p>
-                <select>
+            <div class="currency-real">
+                <p class="i-have">I have</p>
+                <select class="my-coin">
                     <option>Brazilian real</option>
                 </select>
                 <div>
-                    <input type="text" placeholder="R$ 10.000,00" />
-                    <p>1 R$ = 0,00 USD</p>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="R$ 5.000,00"></textarea>
+                    <p id="simple-conversion-real">1 R$ = 0,00 USD</p>
                 </div>
             </div>
 
-            <button>Convert</button>
-
             <div>
-                <p>I want to buy</p>
-                <select>
+                <button>
+                    <span class="material-symbols-outlined materialy">
+                        currency_exchange
+                    </span>
+                </button>
+            </div>
+
+            <div class="currency-others">
+                <p class="i-want">I want to buy</p>
+                <select class="to_convert">
                     <option class="dolar">American dollar</option>
                     <option class="euro">Euro</option>
                     <option class="Pound">Pound</option>
                 </select>
                 <div>
-                    <input type="text" placeholder="US$ 5.000,00" />
-                    <p>1 USD$ = 0,00 R$</p>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="US$ 5.000,00"></textarea>
+                    <p id="simple-conversion-dolar">1 USD$ = 0,00 R$</p>
                 </div>
             </div>
         </label>
     </main>
 
-    <footer>Thank you for visiting our website. © 2024 Coin House. All rights reserved.
+    <footer>Thank you for visiting my website. © 2024 Coin House. All rights reserved.
     </footer>
 
 </body>

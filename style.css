@@ -8,12 +8,13 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
     background-color: #2b2e44;
-    
+
 }
 
-.language,.theme {
+.language,
+.theme {
     appearance: none;
     width: 120px;
     padding: 4px;
@@ -36,42 +37,128 @@ nav {
 
 }
 
-h1, h4 {
+h1,
+h4 {
     padding: 15px 0px;
     margin-left: 60px;
 }
 
 #title {
-    color: #6febdd  ;
+    color: #6febdd;
 }
 
 #subtitle {
-    color: #FFFFFF ;
+    color: #FFFFFF;
 }
 
-main{
+main {
     flex-grow: 1;
 }
 
 .label-container {
-  display: flex;
-  justify-content: center;
-  border: 1px solid #434769;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 20px;
-  margin: 30px 60px;
-  padding: 50px 0px 50px;
-  
+    display: flex;
+    border: 1px solid #434769;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    margin: 30px 60px;
+    padding: 45px 15px;
+    justify-content: space-around;
+    /* Distribui o espaço entre os filhos */
+    gap: 10%;
+    align-items: center;
+    /* Centraliza verticalmente os filhos */
+}
+
+.i-have,
+.i-want {
+    color: white;
+}
+
+.currency-real,
+.currency-others {
+    flex: 1;
+    /* Distribui o espaço disponível igualmente entre as duas divs */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centraliza o conteúdo verticalmente */
+}
+
+.currency-others p {
+    text-align: end;
+}
+
+.my-coin,
+.to_convert {
+    width: 100%;
+    /* Ocupa toda a largura disponível */
+    height: 35px;
+    font-weight: 700;
+    appearance: none;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 20px 0;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    background: #6febdd;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+    /* Adiciona a sombra desejada */
+
+
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: transform 0.5s ease-in-out;
+    /* Adiciona uma transição suave à propriedade de transformação */
+}
+
+button:hover {
+    transform: rotate(180deg);
+}
+
+span {
+    color: #FFFFFF;
+}
+
+.material-symbols-outlined {
+    transform: scale(1.7);
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    background: #2e3247;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 10px;
+    color: #e7e7eaa6;
+}
+
+textarea::placeholder {
+    color: #e7e7eaa6;
+}
+
+#simple-conversion-real,
+#simple-conversion-dolar {
+    color: #b8b9c0;
+    font-size: 14px;
+
 }
 
 footer {
     text-align: center;
     color: white;
     padding: 10px;
+    font-weight: 400;
     background-color: #353852;
-    
 }
-
-
-
-
